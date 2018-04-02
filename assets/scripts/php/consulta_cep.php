@@ -1,0 +1,27 @@
+
+<?php
+
+    /*
+    PROPRIEDADE ÉPOCA TECNOLOGIA
+
+    AUTOR E DESENVOLVEDOR: DHOUGLAS SILVA GOMES
+
+    SISTEMA: ERP SyspoQ
+
+    VERSÃO: 0.1
+    */
+    /* MUDAR PARA https://viacep.com.br/exemplo/jquery/ */
+    
+    $cep = $_POST['cep'];
+    
+    $reg = simplexml_load_file("http://cep.republicavirtual.com.br/web_cep.php?formato=xml&cep=" . $cep);
+    
+    $dados['sucesso'] = (string) $reg->resultado;
+    $dados['rua']     = (string) $reg->tipo_logradouro . ' ' . $reg->logradouro;
+    $dados['bairro']  = (string) $reg->bairro;
+    $dados['cidade']  = (string) $reg->cidade;
+    $dados['estado']  = (string) $reg->uf;
+    
+    echo json_encode($dados);
+ 
+?>
