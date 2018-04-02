@@ -2,6 +2,8 @@
 	session_start();
 	
 	$erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
+
+	$sair = isset($_GET['sair']) ? $_GET['sair'] : 0;
 ?>
 
 
@@ -84,6 +86,10 @@
 									echo'<p></p>';
 									if($erro==1){
 										echo '<font color="#FF0000">Email ou senha invalidos</font>';
+									}
+
+									if($sair==1){
+										echo '<font color="#FF0000">Obrigado por Usar o SySPoQ</font>';
 									}
 								
                            		 ?>       

@@ -31,7 +31,8 @@ VERSÃO: 0.1
 		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
 		<link rel="stylesheet" href="assets/vendor/chartist/css/chartist-custom.css">
-		
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon_syspoq.png">
+
 		<!-- MAIN CSS -->
 		<link rel="stylesheet" href="assets/css/main.css">
 		<link rel="stylesheet" href="assets/css/home.css">
@@ -41,8 +42,8 @@ VERSÃO: 0.1
 		<!-- INCLUSÃO JQUERY -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		 crossorigin="anonymous">
-		</script>
-		<!--<script type='text/javascript' src='assets/scripts/js/edita_cliente.js'></script>		-->
+		</script>		
+		
 	</head>
 
 	<body>

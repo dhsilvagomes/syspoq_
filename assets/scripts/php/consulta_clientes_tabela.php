@@ -53,7 +53,9 @@ echo '<td>'.$registro["inscricao_estadual"].'</td>';
 
 echo '<td>'.$registro["telefone"].'</td>';
 
-echo '<td><form action="altera_cliente.php" method="post"><input type="hidden" name="id_cliente" value="'.$registro["id"].'"><button type="submit" class="btn_alterar_cliente" id="'.$registro["id"].' "><img src="assets/img/edit.png"></img></button></form></td>';
+echo '<td><form action="altera_cliente.php" method="post"><input type="hidden" name="id_cliente" value="'.$registro["id"].'">
+<button type="submit" class="btn_alterar_cliente" id="'.$registro["id"].' " title="Editar">
+<img src="assets/img/edit.png"></img></button></form></td>';
 
 echo '</tr>';
 

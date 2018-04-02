@@ -25,6 +25,7 @@ VERSÃO: 0.1
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		
 		<!-- VENDOR CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -37,6 +38,7 @@ VERSÃO: 0.1
 		<link rel="stylesheet" href="assets/css/home.css">
 		<!-- GOOGLE FONTS -->
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon_syspoq.png">
 		
 		<!-- INCLUSÃO JQUERY -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -59,14 +61,14 @@ VERSÃO: 0.1
 							<!-- OVERVIEW -->
 							<div class="panel panel-headline" id="unico">
 								<div class="panel-heading">
-									<h3 class="text-center">Cadastro de Clientes</h3>									
+									<h3 class="text-center">Cadastro de Produtos</h3>									
 								</div>
 								<div id="btn-novo-cliente">
-									<a href="cadastro_cliente.php"><button type="button" class="btn btn-info">Novo Cliente</button></a>
+									<a href="cadastro_produto.php"><button type="button" class="btn btn-info">Novo Produto</button></a>
 								</div>	
 								<div>
 									<?php
-										include ('assets/scripts/php/consulta_clientes_tabela.php');
+										include ('assets/scripts/php/consulta_produtos_tabela.php');
 									?>
 								</div>
 									

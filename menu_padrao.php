@@ -43,8 +43,8 @@
 							</a>
 							<div id="subPages" class="collapse ">
 								<ul class="nav">
-									<li><a href="home.php" class="">Clientes</a></li>
-									<a href="cadastro_produto.php" class="">Produtos</a>
+									<li><a href="clientes.php" class="">Clientes</a></li>
+									<li><a href="produtos.php" class="">Produtos</a></li>
 									<!--<li><a href="#" class="">Fornecedores</a></li>-->
 								</ul>
 							</div>

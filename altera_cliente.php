@@ -164,7 +164,7 @@ VERSÃO: 0.1
 							<div class="row">
 							  <div class="col-md-12" id="btn-cadastro-cliente">
 							  	<button type="button" id="btn_salva_cliente" class="btn btn-primary">Salvar</button>
-								<a href="home.php" class="btn btn-default">Voltar</a>
+								<a href="clientes.php" class="btn btn-default">Voltar</a>
 								<!--<button type="button" id="btn_consulta_cnpj" class="btn btn-primary">Consulta CNPJ</button>-->
 							  </div>
 							</div>

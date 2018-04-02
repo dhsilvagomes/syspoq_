@@ -37,7 +37,7 @@ VERSÃO: 0.1
 		<link rel="stylesheet" href="assets/css/home.css">
 		<!-- GOOGLE FONTS -->
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-		
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon_syspoq.png">
 		<!-- INCLUSÃO JQUERY -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		 crossorigin="anonymous">
@@ -59,7 +59,7 @@ VERSÃO: 0.1
 							<!-- OVERVIEW -->
 							<div class="panel panel-headline" id="unico">
 								<div class="panel-heading">
-									<h3 class="text-center">Seja Bem Vindo ao SyS PoQ!!</h3>									
+									<h3 class="text-center">Seja Bem Vindo!!! <img src="assets/img/syspoq_alterado.png"></h3>									
 								</div>
 								
 									
