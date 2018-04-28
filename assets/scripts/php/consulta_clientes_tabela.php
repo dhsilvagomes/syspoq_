@@ -24,13 +24,13 @@ echo '<tr">';
 
 echo '<th scope="col">#</th>';
 
-echo '<th scope="col">CNPJ</th>';
+echo '<th scope="col" class="oculta_tabela">CNPJ</th>';
 
-echo '<th scope="col">Razão Social</th>';
+echo '<th scope="col" >Razão Social</th>';
 
-echo '<th scope="col">Inscrição Estadual</th>';
+echo '<th scope="col"  class="oculta_tabela">Inscrição Estadual</th>';
 
-echo '<th scope="col">Telefone</th>';
+echo '<th scope="col" >Telefone</th>';
 
 echo '</tr>';
 
@@ -45,17 +45,35 @@ echo '<tr>';
 
 echo '<th scope="row" id="'.$registro["id"].'">'.$registro["id"].'</th>';
 
-echo '<td>'.$registro["cnpj"].'</td>';
+echo '<td class="oculta_tabela">'.$registro["cnpj"].'</td>';
 
 echo '<td>'.$registro["razao_social"].'</td>';
 
-echo '<td>'.$registro["inscricao_estadual"].'</td>';
+echo '<td class="oculta_tabela">'.$registro["inscricao_estadual"].'</td>';
 
 echo '<td>'.$registro["telefone"].'</td>';
 
-echo '<td><form action="altera_cliente.php" method="post"><input type="hidden" name="id_cliente" value="'.$registro["id"].'">
-<button type="submit" class="btn_alterar_cliente" id="'.$registro["id"].' " title="Editar">
-<img src="assets/img/edit.png"></img></button></form></td>';
+echo '<td>
+        <form action="altera_cliente.php" method="post" style="display:inline;">
+        
+            <input type="hidden" name="id_cliente" value="'.$registro["id"].'">
+        
+            <button type="submit" class="btn-link btn_alterar_cliente" id="alt'.$registro["id"].' " title="Editar"  style"display:inline;>
+        
+            <img src="https://png.icons8.com/office/16/000000/edit.png">
+
+            </button>
+        
+        </form>        
+        
+        
+            <button type="button" class="btn-link ex_cliente" id="'.$registro["id"].'" title="Excluir" style"display:inline;" data-toggle="modal" data-target="#myModal">
+        
+            <img src="https://png.icons8.com/ios-glyphs/20/000000/cancel.png">
+
+            </button>
+        
+      </td>';
 
 echo '</tr>';
 

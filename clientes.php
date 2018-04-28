@@ -43,7 +43,8 @@ VERSÃO: 0.1
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		 crossorigin="anonymous">
 		</script>		
-		
+		<script type="text/javascript" src="assets/scripts/js/excluir_cliente.js"></script>
+		<script type="text/javascript" src="assets/scripts/js/localiza_cliente.js"></script>	
 	</head>
 
 	<body>
@@ -53,7 +54,27 @@ VERSÃO: 0.1
 				include "menu_padrao.php";
 			?>
 				<!-- MAIN -->
-				<div class="main">
+				<div class="main">		
+	  
+					<!-- Modal
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">Exclusão de Clientes</h4>
+							</div>
+							<div class="modal-body">
+							Tem certeza que deseja excluir este cliente?
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+							<button type="button" class="btn btn-primary ex_cliente">Sim</button>
+							</div>
+						</div>
+						</div>
+					</div>-->
+
 					<!-- MAIN CONTENT -->
 					<div class="main-content">
 						<div class="container-fluid">
@@ -62,6 +83,7 @@ VERSÃO: 0.1
 								<div class="panel-heading">
 									<h3 class="text-center">Cadastro de Clientes</h3>									
 								</div>
+								
 								<div id="btn-novo-cliente">
 									<a href="cadastro_cliente.php"><button type="button" class="btn btn-info">Novo Cliente</button></a>
 								</div>	

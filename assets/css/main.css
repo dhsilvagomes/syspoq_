@@ -287,7 +287,7 @@ html.fullscreen-bg #wrapper {
     width: 100%;
     margin: 0; }
     .navbar-nav > li {
-      display: table-cell;
+      display: contents;
       width: 1%;
       position: inherit;
       text-align: center; }
@@ -1767,5 +1767,13 @@ ul.activity-timeline > li {
   .project-table > tbody > tr > td .avatar {
     width: 22px;
     border: 1px solid #CCC; }
+
+@media screen and (max-width:768px){
+	.oculta_tabela{
+		display:none;
+  }
+}
+						
+		
 
 /*# sourceMappingURL=main.css.map */

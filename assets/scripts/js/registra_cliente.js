@@ -16,6 +16,7 @@ $(document).ready(function(){
 						
 						success: function(data){
 							alert(data);
+							window.location.replace("clientes.php");
 						}
 					});
 				}			

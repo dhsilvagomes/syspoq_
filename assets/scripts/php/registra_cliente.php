@@ -48,9 +48,8 @@
 
     //variável utilizada para verificar se
     //o usuário e o email já existe
-    $cnpj_existe = false;
-    
-    $imprime = '';
+    $cnpj_existe = false;    
+  
     //verificar se o cnpj já existe            
     
     $sql = "SELECT * FROM clientes WHERE cnpj = '$cnpj_cliente' ";

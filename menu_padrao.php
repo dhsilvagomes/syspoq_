@@ -11,7 +11,14 @@
 				<div class="navbar-btn">
 					<button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
 				</div>     
-               
+            	
+				<div class="brand">
+
+					<button class="btn btn-primary">VENDAS</button>
+					<button class="btn btn-primary">NOTAS FISCAIS</button>
+					<button class="btn btn-primary">RELATÓRIOS</button>
+
+			   	</div>
                 
                 <!-- BARRA DE NAVEGAÇÃO LATERAL DIREITA-->
 				<div id="navbar-menu">

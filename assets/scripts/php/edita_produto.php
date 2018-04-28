@@ -21,8 +21,10 @@
     require_once('db.class.php');
 
     //recuperando os dados do formulario de 
-    //cadastro de Produtos via Método POST        
+    //cadastro de Clientes via Método POST        
     //e atribuindo a uma variável
+
+    $codigo_produto = $_POST['codigo_produto'];
     $nome_produto = $_POST['nome_produto'];
     $codigo_barras = $_POST['codigo_barras'];
     $fornecedor = $_POST['fornecedor'];
@@ -45,19 +47,22 @@
 
     //instancia um objeto que recebe a função
     //que faz a conexão com o banco de dados
-    $link = $objDb->conecta_mysql();    
+    $link = $objDb->conecta_mysql();
 
-    $sql1 = " INSERT INTO produtos(nome, codigo_de_barras, fornecedor, marca, preco_custo, preco_venda,";
-    $sql1 .= " qtd_estoque, unidade, peso_bruto, peso_liquido, ativo_excluido, situacao_tributaria,";
-    $sql1 .= " origem_produto, cfop, ncm, observacoes) ";
-    $sql1 .= " VALUES ('$nome_produto', '$codigo_barras', '$fornecedor', '$marca',";
-    $sql1 .= " '$preco_custo', '$preco_venda', '$qtd_estoque', '$unidade',";
-    $sql1 .= " '$peso_bruto', '$peso_liquido', '$ativo', '$situacao_tributaria', '$origem_produto', ";
-    $sql1 .= " '$cfop', '$ncm', '$observacoes' )";
+    //variável utilizada para verificar se
+    //o usuário e o email já existe
+    $cnpj_existe = false;
     
+    $sql1 = " UPDATE produtos SET nome='$nome_produto' , codigo_de_barras='$codigo_barras', ";
+    $sql1 .= "fornecedor='$fornecedor', marca='$marca',";
+    $sql1 .= "preco_custo='$preco_custo', preco_venda='$preco_venda',qtd_estoque='$qtd_estoque',";
+    $sql1 .= "unidade='$unidade', peso_bruto='$peso_bruto',";
+    $sql1 .= "peso_liquido='$peso_liquido', ativo_excluido= '$ativo', situacao_tributaria='$situacao_tributaria',";
+    $sql1 .= "origem_produto='$origem_produto', cfop='$cfop', ncm='$ncm', observacoes='$observacoes' WHERE id='$codigo_produto'";        
+        
     //executa query
     if(mysqli_query($link, $sql1)){            
-            echo 'Parabéns PRODUTO CADASTRADO!! ';     
+            echo 'Produto Alterado com sucesso!! ';     
     }else{                   
             echo 'ERRO AO CADASTRAR PRODUTO!!';           
     }

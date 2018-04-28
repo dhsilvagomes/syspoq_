@@ -12,7 +12,7 @@ $objDb = new db();
 $link = $objDb->conecta_mysql();
 
 
-$sql = "SELECT id,nome,preco_venda,qtde_estoque FROM produtos";
+$sql = "SELECT id,nome,preco_venda,qtd_estoque FROM produtos";
 
 $consulta = mysqli_query($link,$sql);
 
@@ -26,7 +26,7 @@ echo '<th scope="col">#</th>';
 
 echo '<th scope="col">Descrição</th>';
 
-echo '<th scope="col">Preço</th>';
+echo '<th scope="col" class="oculta_tabela">Preço</th>';
 
 echo '<th scope="col">Estoque</th>';
 
@@ -43,15 +43,13 @@ echo '<tr>';
 
 echo '<th scope="row" id="'.$registro["id"].'">'.$registro["id"].'</th>';
 
-echo '<td>'.$registro["cnpj"].'</td>';
+echo '<td>'.$registro["nome"].'</td>';
 
-echo '<td>'.$registro["razao_social"].'</td>';
+echo '<td class="oculta_tabela">'.$registro["preco_venda"].'</td>';
 
-echo '<td>'.$registro["inscricao_estadual"].'</td>';
+echo '<td>'.$registro["qtd_estoque"].'</td>';
 
-echo '<td>'.$registro["telefone"].'</td>';
-
-echo '<td><form action="altera_cliente.php" method="post"><input type="hidden" name="id_cliente" value="'.$registro["id"].'">
+echo '<td><form action="altera_produto.php" method="post"><input type="hidden" name="id_cliente" value="'.$registro["id"].'">
 <button type="submit" class="btn_alterar_cliente" id="'.$registro["id"].' " title="Editar">
 <img src="assets/img/edit.png"></img></button></form></td>';
 
