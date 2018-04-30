@@ -4,6 +4,8 @@
 	$erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
 
 	$sair = isset($_GET['sair']) ? $_GET['sair'] : 0;
+	//Configurações essenciais
+    require_once 'scripts\php\config\config.php';
 ?>
 
 
@@ -13,7 +15,7 @@
 <head>
 	<title>Login | Sys Epok</title>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!-- VENDOR CSS -->
 	<!-- Latest compiled and minified CSS -->
@@ -94,7 +96,7 @@
 								
                            		 ?>       
 							</div>
-							<form class="form-auth-small" method="post" action="assets/scripts/php/valida_acesso.php" id="form_login">
+							<form class="form-auth-small" method="post" action="scripts/php/users/valida_acesso.php" id="form_login">
 								<div class="form-group">
 									<label for="input_email_login" class="control-label sr-only">Email</label>
 									<input type="email" class="form-control" id="input_email_login" placeholder="Email" name="email" autofocus="true">
